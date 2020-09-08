@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+header h2{
+    color: red;
+    margin: 40px;
+    font-size: 40px;
+}
+
+.ricerca{
+    margin-right: 30px;
+}
+
+.ricerca input{
+    height: 30px;
+    width:
+}
+
+.immagine{
+    list-style: none;
+    width: 250px;
+}
+
+.immagine img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.Film{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}

@@ -10,22 +10,33 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-    <div class="ricerca">
-        <input type="text" name="Ricerca film" id="" placeholder="Ricerca il tuo film">
-        <button type="button" name="button">Search</button>
-    </div>
-    <div class="container">
-
-    </div>
+        <header>
+            <h2>Boolflix</h2>
+            <div class="ricerca">
+                <input type="text" name="Ricerca film" id="" placeholder="Ricerca il tuo film">
+                <button type="button" name="button">Search</button>
+            </div>
+        </header>
+    <h2>Film</h2>
+    <div class="container-film"> </div>
+    <h2>Tv</h2>
+    <div class="container-tv"> </div>
 
 
         <script id="entry-template" type="text/x-handlebars-template">
-            <ul class="Film">
-                <li>Titolo: {{title}} </li>
-                <li>Titolo Originale : {{original_title}} </li>
-                <li>Lingua : {{original_language}} </li>
-                <li>Voto : {{{vote_average}}} </li>
-            </ul>
+            <div class="risultati">
+                <div class="immagine">{{{poster}}}</div>
+                <div class="info">
+                    <ul class="Film">
+                        <li>Tipo: {{tipo}}</li>
+                        <li>Titolo: {{title}} </li>
+                        <li>Titolo Originale : {{original_title}} </li>
+                        <li>Lingua : {{original_language}} </li>
+                        <li>Voto : {{{vote_average}}} </li>
+                        <li>Descrizione: {{overview}}</li>
+                    </ul>
+                </div>
+            </div>
         </script>
         <script id="no-result-template" type="text/x-handlebars-template">
           <div>{{noResult}}</div>
