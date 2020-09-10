@@ -25,7 +25,13 @@ header h2{
 
 .ricerca input{
     height: 30px;
-    width:
+    width: 150px;
+}
+
+.ricerca button{
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
 }
 
 .immagine{
@@ -37,7 +43,6 @@ header h2{
     height: 100%;
     width: 100%;
 }
-
 
 .Film{
     border-top: 1px solid black;
